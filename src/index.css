@@ -1,0 +1,73 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap');
+
+/* Font family utilities for Tailwind */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+@import "tailwindcss";
+
+
+
+/* Bounce-in animation */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(40px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+.animate-bounceIn {
+  animation: bounceIn 0.8s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+}
+.delay-200 {
+  animation-delay: 0.2s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .font-montserrat {
+    font-size: 1.25rem !important;
+  }
+  .font-poppins {
+    font-size: 1rem !important;
+  }
+}
+/* src/index.css */
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+/* Apply fonts */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom glow effect */
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
+}

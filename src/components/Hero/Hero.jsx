@@ -28,7 +28,7 @@ const Hero = () => {
                     Discover India’s stories, culture, and landscapes through cinematic travel adventures
                 </p>
                 <a
-                    href="#adventures"
+                    href="https://www.youtube.com/@MonkeyxMagic"
                     id="hero-cta"
                     className="bg-white text-red-600 font-semibold rounded-lg px-8 py-3 text-lg shadow-lg transition-all duration-200 hover:bg-red-200 hover:scale-105 animate-fadeInUp delay-400"
                 >
